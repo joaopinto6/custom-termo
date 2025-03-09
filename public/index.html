@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Custom Game Generator</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wordle Custom Game Generator</h1>
+        <div class="input-area">
+            <label for="customWord">Enter your custom word:</label>
+            <input type="text" id="customWord" placeholder="e.g., BANANA">
+            <button id="createGameBtn">Create Game & Get Link</button>
+        </div>
+        <div id="linkArea" class="hidden">
+            <h2>Share this link:</h2>
+            <a href="#" id="gameLink" target="_blank"></a>
+            <p>Share this link with your friends and family to play your custom Wordle!</p>
+        </div>
+    </div>
+    <script src="./assets/app.js"></script>
+</body>
+</html>

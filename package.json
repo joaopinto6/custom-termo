@@ -1,0 +1,15 @@
+{
+  "name": "termo-generator",
+  "version": "1.0.0",
+  "description": "Custom termo generator with shareable game links",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "netlify dev",
+    "build": "echo 'No build step needed'"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.1",
+    "nanoid": "^5.1.3"
+  }
+}
