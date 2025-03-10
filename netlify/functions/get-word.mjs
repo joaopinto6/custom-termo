@@ -1,8 +1,6 @@
 import { getStore } from '@netlify/blobs';
 
 export default async (req, context) => {
-  console.log('Request received for /get-word:', req); 
-  console.log('Request query parameters:', req.query); 
 
   if (req.method !== 'GET') {
     return new Response('Method Not Allowed', {
@@ -16,8 +14,6 @@ export default async (req, context) => {
   // Manually parse query parameters from req.url
   const url = new URL(req.url); // Create URL object from request URL
   const gameId = url.searchParams.get('gameId'); // Use URLSearchParams to get 'gameId'
-
-  console.log('Parsed gameId from URL:', gameId); // Log parsed gameId
 
   if (!gameId) {
     return new Response(JSON.stringify({ error: 'Game ID is required' }), {

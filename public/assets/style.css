@@ -1,15 +1,16 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Mitr', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #6E5C62;
   margin: 0;
+  color: #FAFAFF;
 }
 
 .container {
-  background-color: white;
+  background-color: #312A2C;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -37,14 +38,14 @@ body {
   padding: 10px 15px;
   border: none;
   border-radius: 4px;
-  background-color: #007bff;
+  background-color: #009AFE;
   color: white;
   cursor: pointer;
   margin-top: 10px;
 }
 
 #createGameBtn:hover, #submitGuessBtn:hover {
-  background-color: #0056b3;
+  background-color: #007ACC;
 }
 
 #linkArea {
@@ -62,45 +63,46 @@ body {
   display: block;
   margin-top: 10px;
   font-size: 1.2em;
-  color: #007bff;
+  color: #009AFE;
   text-decoration: none;
 }
 
 #gameBoard {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); /* Adjust size as needed */
   gap: 5px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  width: fit-content;
 }
 
 .tile {
   width: 50px;
   height: 50px;
-  border: 2px solid #ccc;
+  border: 2px solid #4C4347;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
+  background-color: #615458;
+  color: #FAFAFF;
+  border-radius: 10%;
 }
 
 .tile.correct {
-  background-color: #6aaa64;
-  color: white;
-  border-color: #6aaa64;
+  background-color: #3AA394;
+  border-color: #3AA394;
 }
 
 .tile.present {
-  background-color: #c9b458;
-  color: white;
-  border-color: #c9b458;
+  background-color: #D3AD69;
+  border-color: #D3AD69;
 }
 
 .tile.absent {
-  background-color: #787c7e;
-  color: white;
-  border-color: #787c7e;
+  background-color: #312A2C;
+  border-color: #312A2C;
+  color: #504A4B;
 }
 
 #guessInput {
@@ -112,5 +114,5 @@ body {
 }
 
 #message {
-  min-height: 20px; /* To prevent layout shift */
+  min-height: 20px;
 }
